@@ -13,4 +13,8 @@ ul{
 li{
 	display: inline;
 	}
-
+img
+{
+	height: 10 px; 
+	width: 10 px;
+}
