@@ -1,3 +1,9 @@
+body
+{
+	font-family: Arial;
+	font-size: 13px;
+}
+
 ul
 {
 	list-style-type:none;
@@ -70,19 +76,38 @@ label
 
 .grid-container2
 {
-	grid-auto-rows: minmax (auto, auto);
 	grid-gap: auto;
 	
 	grid-template-areas:
-	'article2Tag article1Tag article3Tag'
-	'article5Tag article1Tag article4Tag'
-	'article5Tag article6Tag article6Tag' ;
+		'article2Tag article1Tag article3Tag'
+		'article5Tag article1Tag article3Tag' 
+		'article5Tag article1Tag article4Tag' 
+		'article5Tag article6Tag article6Tag'
+		'aside1Tag aside2Tag aside3Tag'
 }
 
 .article
 {
 	border: 3px solid black;
 	margin: 3px;
+	padding: 3px;
+}
+
+.aside img
+{
+	width: 75px;
+}
+
+.aside
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	
+	justify-content: space-between;
+	
+	border: 3px solid #65B5C8;
+	margin: 3px;
+	padding: 3px;
 }
 
 .article1
@@ -115,9 +140,84 @@ label
 	grid-area: article6Tag;
 }
 
+.aside1
+{
+	grid-area: aside1Tag;
+}
+
+.aside2
+{
+	grid-area: aside2Tag;
+}
+
+.aside3
+{
+	grid-area: aside3Tag;
+}
+
+.grid-container3
+{
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+}
+
 @media only screen and (max-width: 1179px)
 {
+	.grid-container2
+	{
+		grid-template-areas:
+			'article1Tag article2Tag'
+			'article3Tag article2Tag'
+			'article3Tag article5Tag'
+			'article6Tag article6Tag'
+			'aside1Tag aside2Tag'
+			'aside1Tag aside2Tag' ;
+	}
+	
+	.article1
+	{
+		grid-area: article1Tag;
+	}
+	
+	.article2
+	{
+		grid-area: article2Tag;
+	}
 
+	.article3
+	{
+		grid-area: article3Tag;
+	}
+
+	.article4
+	{
+		display: none;
+	}
+
+	.article5
+	{
+		grid-area: article5Tag;
+	}
+
+	.article6
+	{
+		grid-area: article6Tag;
+	}
+
+	.aside1
+	{
+		grid-area: aside1Tag;
+	}
+
+	.aside2
+	{
+		grid-area: aside2Tag;
+	}
+
+	.aside3
+	{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 500px)  /*Verander naar 480px!!! */
@@ -162,5 +262,62 @@ label
 	.grid-container1
 	{
 		grid-template-columns: auto auto;
+	}
+	
+	.grid-container2
+	{
+		grid-template-areas:
+			'article5Tag'
+			'article3Tag'
+			'article2Tag'
+			'article1Tag'
+			'aside1Tag'
+			'aside2Tag'
+			'aside3Tag' ;
+	}
+	.article1
+	{
+		grid-area: article1Tag;
+	}
+
+	.article2
+	{
+		grid-area: article2Tag;
+	}
+
+	.article3
+	{
+		grid-area: article3Tag;
+	}
+
+	.article4
+	{
+		display: none;
+	}
+
+	.article5
+	{
+		grid-area: article5Tag;
+	}
+
+	.article6
+	{
+		display: none;
+	}
+
+	.aside1
+	{
+		grid-area: aside1Tag;
+	}
+	
+	.aside2
+	{
+		grid-area: aside2Tag;
+	}
+	
+	.aside3
+	{
+		display: grid;
+		grid-area: aside3Tag;
 	}
 }
