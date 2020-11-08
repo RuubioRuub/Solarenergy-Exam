@@ -3,10 +3,23 @@ ul
 	list-style-type:none;
 	display: flex;
 	flex-direction: rows;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
-img
+nav
+{
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	background-color: #133674;
+}
+
+#navbartitle
+{
+	color: #FFF;
+}
+
+.articlesIndex img
 {
 	height: 100px; 
 	width: 100px;
@@ -16,6 +29,166 @@ img
 
 .articlesIndex
 {
-	padding: 20px;
+	border: 3px solid black;
+	padding: 50px 0 50px 0;
+	margin: 3px;
 }
 
+#pheonix
+{
+	height: 100px;
+	width: 180px;
+}
+
+.flexbox-item-1
+{
+	width: 70%
+}
+
+.flexbox-container-2
+{
+	display: flex;
+	flex-direction: rows;
+	
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.flexbox-container-3
+{
+	display: flex;
+	flex-direction: rows;
+	justify-content: space-between;
+}
+
+#Cookiestatement
+{
+	background-color: #FA0;opacity: 0.5;
+	width: 200px;
+	text-align: center;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+#Cookiestatement p 
+{
+	color: #FFF;
+}
+
+.menu
+{
+	margin: 0 30px 0 0;
+}
+
+.menu a 
+{
+	clear:center;
+	text-decoration:none;
+	color:#65B5C8;
+	margin:0 10px;
+	line-height:70px;
+	
+}
+
+label
+{
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+
+#toggle
+{
+	display: none;
+}
+
+@media only screen and (max-width: 1179px)
+{
+/* 	label
+	{
+		display: block;
+		cursor: pointer;
+	} */
+	
+	.articlesIndex img
+	{
+		height: 100px; 
+		width: 100px;
+	
+		float: left;
+	}
+	
+	.flexbox-item-1
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	
+	/* .menu
+	{
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+	
+	.menu a
+	{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0;
+	}
+	
+	#toggle:checked + .menu
+	{
+		display: block;
+	} */
+}
+
+@media only screen and (max-width: 500px)  /*Verander naar 480px!!! */
+{
+	label
+	{
+		display: block;
+		cursor: pointer;
+	}
+
+	.articlebod
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	.flexbox-container-2
+	{
+		flex-direction: column-reverse;
+	}
+
+	.menu
+	{
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+	
+	.menu a
+	{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0;
+		background-color: #133674;
+	}
+	
+	#logo
+	{
+		display: none;
+	}
+	
+	#toggle:checked + .menu
+	{
+		display: block;
+	}
+}
