@@ -1,7 +1,12 @@
 body
 {
 	font-family: Arial;
-	font-size: 13px;
+	font-size: 12px;
+}
+
+h1
+{
+	font-size: 25px;
 }
 
 ul
@@ -15,7 +20,6 @@ ul
 nav
 {
 	text-align: center;
-	height: 70px;
 	line-height: 70px;
 	background-color: #133674;
 }
@@ -23,6 +27,11 @@ nav
 #navbartitle
 {
 	color: #FFF;
+}
+
+video
+{
+	margin: 20px;
 }
 
 .articlesIndex img
@@ -119,12 +128,10 @@ label
 
 @media only screen and (max-width: 1179px)
 {
-/* 	label
+	.flexbox-container2
 	{
-		display: block;
-		cursor: pointer;
-	} */
-	
+		display: flex;
+	}
 	.articlesIndex img
 	{
 		height: 100px; 
@@ -137,27 +144,26 @@ label
 	{
 		display: flex;
 		flex-direction: column-reverse;
+		order: 3;
 	}
 	
-	
-	/* .menu
+	video
 	{
-		text-align: center;
-		width: 100%;
-		display: none;
+		width: 440px;
+		order: 2;
 	}
 	
-	.menu a
+		
+	.flexbox-item5
 	{
-		display: block;
-		border-bottom: 1px solid black;
-		margin: 0;
+		display: flex;
+		flex-direction: column;
 	}
 	
-	#toggle:checked + .menu
+	.flexbox-item4
 	{
-		display: block;
-	} */
+		order: 1;
+	}
 }
 
 @media only screen and (max-width: 500px)  /*Verander naar 480px!!! */
@@ -200,6 +206,11 @@ label
 		margin: 0;
 		background-color: #133674;
 		font-size: 10px;
+	}
+	
+	video
+	{
+		display: none;
 	}
 	
 	#logo
