@@ -1,4 +1,4 @@
-Student name: Micha van der Meer
-Student number: 45669
+Student name: Ruben Walkeuter
+Student number: 664759
 Student class: IT1A
 URL student GitHub repository: https://github.com/RuubioRuub/Solarenergy-Exam/commits?author=RuubioRuub 

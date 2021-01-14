@@ -1,7 +1,10 @@
 body
 {
-	font-family: Arial;
+	font-family: Arial, Notable;
 	font-size: 13px;
+		
+	text-indent: 1%;
+	word-spacing: 2px;
 }
 
 h1
@@ -13,7 +16,7 @@ ul
 {
 	list-style-type:none;
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -55,7 +58,7 @@ nav
 
 .menu a 
 {
-	clear:center;
+	clear:both;
 	text-decoration:none;
 	color:#65B5C8;
 	margin:0 10px;
@@ -78,7 +81,7 @@ label
 	display: none;
 }
 
-img
+aside img
 {
 	width: 100px;
 }
@@ -86,12 +89,12 @@ img
 aside
 {
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 	
 	border: 3px solid #65B5C8;
 	margin: 3px;
-	padding: px;
+	padding: 3px;
 }
 
 .flexbox-container1
@@ -101,13 +104,14 @@ aside
 
 .flexbox-container2
 {
-	flex-direction: rows;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .flexbox-container3
 {
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -125,11 +129,11 @@ aside
 .message
 {
 	height: 200px;
-	text-align: top;
+	text-align: center;
 }
 
 
-@media only screen and (max-width: 480px) 
+@media only screen and (max-width: 479px) 
 {
 	label
 	{

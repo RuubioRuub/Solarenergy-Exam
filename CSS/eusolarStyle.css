@@ -1,7 +1,10 @@
 body 
 {
-	font-family: Arial;
+	font-family: Arial, Notable;
 	font-size: 13px;
+	
+	text-indent: 1%;
+	word-spacing: 2px;
 }
 
 h1
@@ -13,7 +16,7 @@ ul
 {
 	list-style-type:none;
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -50,7 +53,7 @@ nav
 
 .menu a 
 {
-	clear:center;
+	clear:both;
 	text-decoration:none;
 	color:#65B5C8;
 	margin:0 10px;
@@ -97,8 +100,8 @@ article p
 	width: 325px;
 }
 
-aside img
-{
+aside img  /*these are the images in the adds on the side of the */
+{          /* page. */
 	width: 100px;
 }
 
@@ -109,7 +112,7 @@ aside img
 	padding: 3px;
 	
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 	flex-shrink: 1;
 }
@@ -123,14 +126,14 @@ aside img
 .flexbox-container2
 {
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
 .flexbox-container3
 {
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -149,7 +152,7 @@ aside img
 	.asides
 	{
 		display: flex;
-		flex-direction: rows;
+		flex-direction: row;
 	}
 	
 	.aside1
@@ -158,7 +161,7 @@ aside img
 	}
 }
 
-@media only screen and (max-width: 480px) 
+@media only screen and (max-width: 479px) 
 {
 	label
 	{

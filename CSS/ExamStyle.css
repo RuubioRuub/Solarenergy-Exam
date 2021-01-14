@@ -1,7 +1,11 @@
 body
 {
-	font-family: Arial;
+	font-family: Arial, Notable;
 	font-size: 12px;
+	
+		
+	text-indent: 1%;
+	word-spacing: 2px;
 }
 
 h1
@@ -13,7 +17,7 @@ ul
 {
 	list-style-type:none;
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -57,13 +61,13 @@ video
 
 .flexbox-item3
 {
-	width: 70%
+	width: 70%;
 }
 
 .flexbox-container2
 {
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -78,7 +82,7 @@ video
 .flexbox-container3
 {
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -103,7 +107,7 @@ video
 
 .menu a 
 {
-	clear:center;
+	clear:both;
 	text-decoration:none;
 	color:#65B5C8;
 	margin:0 10px;
@@ -140,7 +144,7 @@ label
 	
 	.flexbox-item3
 	{
-		flex-direction: column-reverse:
+		flex-direction: column-reverse;
 	}
 	
 	.articlebod img
@@ -149,7 +153,7 @@ label
 	}
 }
 
-@media only screen and (max-width: 480px)
+@media only screen and (max-width: 479px)
 {
 	label
 	{
@@ -166,7 +170,7 @@ label
 	.flexbox-container1
 	{
 		display: flex;
-		flex-direction: rows;
+		flex-direction: row;
 		justify-content: space-between;
 	}
 	

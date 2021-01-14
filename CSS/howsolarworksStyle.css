@@ -1,7 +1,10 @@
 body
 {
-	font-family: Arial;
+	font-family: Arial, Notable;
 	font-size: 13px;
+	
+	text-indent: 1%;
+	word-spacing: 2px;
 }
 
 h1
@@ -13,7 +16,7 @@ ul
 {
 	list-style-type:none;
 	display: flex;
-	flex-direction: rows;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -50,7 +53,7 @@ nav
 
 .menu a 
 {
-	clear:center;
+	clear:both;
 	text-decoration:none;
 	color:#65B5C8;
 	margin:0 10px;
@@ -80,7 +83,7 @@ label
 
 .grid-container2
 {
-	grid-gap: auto;
+	grid-gap: normal;
 	
 	grid-template-areas:
 		'article2Tag article1Tag article3Tag'
@@ -224,7 +227,7 @@ label
 	}
 }
 
-@media only screen and (max-width: 480px) 
+@media only screen and (max-width: 479px) 
 {
 	label
 	{
