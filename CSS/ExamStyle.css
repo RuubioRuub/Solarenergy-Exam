@@ -62,6 +62,8 @@ video
 .flexbox-item3
 {
 	width: 70%;
+	line-height: 15px;
+	letter-spacing: 1px;
 }
 
 .flexbox-container2
@@ -93,6 +95,7 @@ video
 	text-align: center;
 	flex-shrink: 0;
 	flex-grow: 0;
+	z-index: 9999;
 }
 
 #Cookiestatement p 
